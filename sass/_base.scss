@@ -1,3 +1,42 @@
+[class*='col-'] {
+  min-height: 1px;
+}
+
+.boxes-bg {
+  padding: 15px;
+  margin: 15px;
+  background: #989898;
+  word-break: break-all;
+}
+
+.font-size-xs {
+  font-size: 20px;
+}
+
+.font-size-s {
+  font-size: 24px;
+}
+
+.font-size-m {
+  font-size: 28px;
+}
+
+.font-size-l {
+  font-size: 32px;
+}
+
+.font-size-xl {
+  font-size: 36px;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
 h1 {
   color: #3c98a8;
 }
