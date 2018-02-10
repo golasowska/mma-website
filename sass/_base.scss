@@ -8,6 +8,10 @@ body {
   justify-content: center;
 }
 
+section.container {
+  margin-top: 40px;
+}
+
 [class*='col-'] {
   min-height: 1px;
 }
@@ -107,3 +111,11 @@ body {
 }
 
 // ****** KANCELARIA ******** //
+.row {
+  .news {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
