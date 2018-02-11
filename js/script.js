@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navigUl = document.querySelector('.navigation > ul');
   const navigUlLi = navigUl.querySelectorAll('li');
   const navigUlA = navigUl.querySelectorAll('a');
+
   bar.addEventListener('click', () => {
     if (navig.className === 'col-8 navigation') {
       navig.className = 'visible';
@@ -30,5 +31,16 @@ document.addEventListener('DOMContentLoaded', () => {
         navigUlLi[i].style.padding = '0 20px 0 0';
       }
     }
+  });
+});
+
+$(function() {
+  const arrowDown = $('.fa-arrow-down');
+  const descDet = $('.desc-det');
+  const hiddenDesc = $('.desc-det').hide();
+  arrowDown.on('click', function() {
+    $(this)
+      .prev()
+      .slideToggle();
   });
 });
