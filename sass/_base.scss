@@ -189,3 +189,22 @@ section.container {
     }
   }
 }
+
+.row {
+  .team {
+    text-align: center;
+    img {
+      width: 90%;
+    }
+    p {
+      width: 90%;
+      margin: 20px auto;
+      text-align: justify;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      font-size: 16px;
+    }
+  }
+}
