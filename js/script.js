@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
+  initMap = () => {
+    const uluru = { lat: 50.067805, lng: 19.965802 };
+    const map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 17,
+      center: uluru
+    });
+    const marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  };
+
+  initMap();
+
   const bar = document.querySelector('.fa');
   const navig = document.querySelector('.navigation');
   const navigUl = document.querySelector('.navigation > ul');
@@ -42,5 +56,26 @@ $(function() {
     $(this)
       .prev()
       .slideToggle();
+  });
+});
+
+$(function() {
+  const poradyPrawne = $('.wynagrodzenie').find('div');
+  const poradyPrawneDesc = $('.wynagrodzenie-descr').find('div');
+
+  poradyPrawne.on('click', function() {
+    $(poradyPrawneDesc).text($(event.target).text());
+    poradyPrawneDesc.slideToggle();
+    console.log('porady');
+  });
+});
+
+$(function() {
+  const offer = $('.offer').find('div');
+  const offerDescr = $('.offer-descr');
+
+  offer.on('click', function() {
+    $(offerDescr).text($(event.target).text());
+    offerDescr.slideToggle();
   });
 });
